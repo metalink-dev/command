@@ -1,4 +1,4 @@
-#& -l --args "-Wall -g -Werror -ansi "
+#& -l --args "-Wall -g -Werror -ansi -std=c++11 "
 #
 #  This file is part of the metalink program
 #  Copyright (C) 2008  A. Bram Neijt <bneijt@gmail.com>

@@ -11,4 +11,4 @@ before_install:
 script:
     - CXX=g++-4.8 cmake .
     - make
-
+    - ./metalink --alldigests metalink < example/example.com

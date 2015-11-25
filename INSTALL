@@ -1,41 +1,24 @@
 
 First install the dependencies:
-	libgcrypt
-	BOOST program_options
-	BOOST filesystem
-	BOOST regex (as of 0.3.1)
+    libgcrypt
+    glibmm
+    BOOST program_options
+    BOOST filesystem
+    BOOST regex (as of 0.3.1)
+    cmake (build utilty)
+
+Then run
+    cmake .
+    make
 
 
-Then, if you have A-A-P installed (aap --version) do:
-	aap install
 
-You can cleanup afterwards with: aap cleanALL
+All development is done with ccbuild, so entering the source directory and executing ccbuild, should produce a valid binary.
 
-Otherwise use the autotools:
-	./configure
-	make
-	make install (With the right rights)
-
-with extra options for MingW:
-	./configure --with-boost-program-options=mgw --with-boost-regex=mgw --with-boost-filesystem=mgw
-
-If that fails, try the old way:
-	make -f Makefile.ccbuild
-	make -f Makefile.ccbuild install (With the right rights)
-	
-
-All SVN development is done with ccbuild, so entering the source directory and executing ccbuild, should produce a valid binary. (http://ccbuild.sf.net/)
-If you have the autotools archive and all the GNU autotools and ccbuild, you can also run "sh bootstrap". Don't if you havn't.
+If you have ccbuild, you can also run "sh bootstrap", this will generate CMakeLists.txt from a template.
 
 Some code documentation can be generated using doxygen.
 
+Most Debian based systems should be able to see a valid build procedure in Travis-CI.
 
-For Ubuntu users, this might work:
-
-sudo apt-get install g++ libgcrypt-dev libboost-regex-dev libboost-program-options-dev libboost-filesystem-dev libboost-dev aap
-sudo aap install
-sudo aap cleanALL
-
-(if not mail, please consider posting a bug on the sourceforge page)
-
-More information an newer versions can be found at http://metalinks.sourceforge.net/
+More information and newer versions can be found at https://github.com/metalink-dev/command

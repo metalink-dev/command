@@ -1,6 +1,7 @@
 /CMakeFiles
 /CMakeCache.txt
 /metalink
+/src/metalink
 /cmake_install.cmake
 /Makefile
 /Makefile.am

@@ -30,4 +30,6 @@ link_libraries(\${GLIBMM_LIBRARIES} gcrypt)
 
 add_definitions(-std=c++11 )
 add_executable(${PNAME} ${SOURCES})
+
+install(TARGETS metalink DESTINATION bin)
 EOF

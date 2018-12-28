@@ -2,7 +2,7 @@ metalink
 ========
 
 License: GPLv3+
-Status: production
+Status: production`
 
 ![Travis CI build status](https://travis-ci.org/metalink-dev/command.svg?branch=master)
 
@@ -38,5 +38,3 @@ however metalink only supports ED2K links of no more then 4290048000 bytes
  (which is a nice whole number of blocks).
 
 Files with a ".metalink" extension will never be hashed.
-
-
